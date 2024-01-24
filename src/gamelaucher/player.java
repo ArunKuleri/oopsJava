@@ -8,7 +8,7 @@ public class player {
 
     }
     void makeGuess(){
-        guess = (int)(Math.random()*9)+1;
-        System.out.println(this.name + "guessed " + guess);
+        this.guess = (int)(Math.random()*9)+1;
+        System.out.println(this.name + "guessed " + this.guess);
     }
 }
