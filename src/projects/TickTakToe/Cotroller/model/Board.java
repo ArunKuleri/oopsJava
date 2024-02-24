@@ -27,6 +27,14 @@ public void displayBoard(){
         }
 }
 
+    public List<List<Cell>> getMatrix() {
+        return matrix;
+    }
+
+    public void setMatrix(List<List<Cell>> matrix) {
+        this.matrix = matrix;
+    }
+
     public int getDimensions() {
         return dimensions;
     }
