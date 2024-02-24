@@ -4,6 +4,6 @@ import projects.TickTakToe.Cotroller.model.Board;
 import projects.TickTakToe.Cotroller.model.Move;
 import projects.TickTakToe.Cotroller.model.Players;
 
-public interface WinnigStrategy {
+public interface WinnigStrategyName {
     Players checkWinner(Board board, Move lastMove);
 }

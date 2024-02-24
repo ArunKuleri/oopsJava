@@ -1,6 +1,6 @@
 package projects.TickTakToe.Cotroller;
 
-import projects.TickTakToe.Cotroller.Service.WinnigStrategy.BotPlayingStrategy.WinnigStrategy;
+import projects.TickTakToe.Cotroller.Service.WinnigStrategy.BotPlayingStrategy.WinnigStrategyName;
 import projects.TickTakToe.Cotroller.model.Game;
 import projects.TickTakToe.Cotroller.model.Move;
 import projects.TickTakToe.Cotroller.model.Players;
@@ -8,7 +8,7 @@ import projects.TickTakToe.Cotroller.model.Players;
 import java.util.List;
 
 public class GameController {
-    public Game createGame(int dimension, List<Players> players, WinnigStrategy){
+    public Game createGame(int dimension, List<Players> players, WinnigStrategyName name){
         return null;
     }
     public void  displayBoard(Game game){
