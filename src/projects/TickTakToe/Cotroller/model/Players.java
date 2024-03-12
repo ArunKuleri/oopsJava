@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Players {
     private int id;
+    private String name;
+    private char symbol;
+    private PlayerType playerType;
+    public Players(){
+
+    }
 
     public Players(int id, String name, char symbol, PlayerType playerType) {
         this.id = id;
@@ -25,9 +31,6 @@ public class Players {
 
     }
 
-    private String name;
-    private  char symbol;
-    private PlayerType playerType;
 
     public PlayerType getPlayerType() {
         return playerType;

@@ -1,6 +1,6 @@
 package projects.TickTakToe.Cotroller.model;
 
-import projects.TickTakToe.Cotroller.Service.WinnigStrategy.BotPlayingStrategy.WinnigStrategyName;
+import projects.TickTakToe.Cotroller.Service.WinnigStrategy.BotPlayingStrategy.WinnigStrategy;
 import projects.TickTakToe.Cotroller.exeception.InvalidBotException;
 import projects.TickTakToe.Cotroller.exeception.InvalidPlayerSIzeException;
 import projects.TickTakToe.Cotroller.exeception.InvalidSymbolSetUpException;
@@ -14,13 +14,13 @@ public class Game {
     private List<Players> player;
     
     private Players currentPlayer;
-    private WinnigStrategyName winnigStrategy;
+    private WinnigStrategy winnigStrategy;
     private  List<Board> boardStates;
     private int numberOfSymbols;
 
 
 
-    public Game(Board currentBoard, List<Players> player,  WinnigStrategyName winnigStrategy) {
+    public Game(Board currentBoard, List<Players> player,  WinnigStrategy winnigStrategy) {
         this.currentBoard = currentBoard;
         this.player = player;
         this.winnigStrategy = winnigStrategy;
@@ -46,7 +46,7 @@ public class Game {
 
 
 
-    public void setWinnigStrategy(WinnigStrategyName winnigStrategy) {
+    public void setWinnigStrategy(WinnigStrategy winnigStrategy) {
         this.winnigStrategy = winnigStrategy;
     }
 
@@ -67,7 +67,7 @@ public class Game {
 
 
 
-    public WinnigStrategyName getWinnigStrategy() {
+    public WinnigStrategy getWinnigStrategy() {
         return winnigStrategy;
     }
 
@@ -80,7 +80,7 @@ public class Game {
         private GameStatus gameStatus;
         private List<Move> moves;
         private List<Board> boardStates;
-        private WinnigStrategyName winnigStrategy;
+        private WinnigStrategy winnigStrategy;
         private int numberOfSymbols;
 
         public int getDimension() {
@@ -119,7 +119,7 @@ public class Game {
             return this;
         }
 
-        public Builder setWinnigStrategy(WinnigStrategyName winnigStrategy) {
+        public Builder setWinnigStrategy(WinnigStrategy winnigStrategy) {
             this.winnigStrategy = winnigStrategy;
             return this;
         }
